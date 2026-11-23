@@ -1,0 +1,37 @@
+.card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url("../Assets/img/back_img.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+} */
+
+
+ .hero {
+  position: relative;
+  background: url("../Assets/img/back_two.jpg") center/cover no-repeat;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65); /* dark overlay */
+ } 
+ .hero .container {
+  position: relative;
+  z-index: 2;
+} 
+.hero-points li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}

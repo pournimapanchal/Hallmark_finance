@@ -1,0 +1,201 @@
+.loan-box{
+position:relative;
+overflow:hidden;
+}
+
+.loan-box::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+transition:0.4s;
+}
+
+.loan-content{
+position:relative;
+z-index:2;
+}
+
+.loan-box h4{
+font-weight:600;
+}
+
+.loan-box span{
+color:#9cff00;
+margin-right:8px;
+}
+
+.find-more{
+color:#9cff00;
+font-size:14px;
+margin-top:8px;
+opacity:0;
+transform:translateY(10px);
+border-bottom:2px solid #9cff00;
+width:fit-content;
+transition:0.3s;
+}
+
+.loan-box:hover .find-more{
+opacity:1;
+transform:translateY(0);
+}
+
+/* ==============================
+   LOAN CATEGORIES SECTION
+================================ */
+
+.loan-categories-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.loan-heading {
+  padding: 60px 20px 45px;
+}
+
+.loan-heading h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.loan-heading p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+
+/* ==============================
+   LOAN BOX
+================================ */
+
+.loan-box {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  color: white;
+  text-decoration: none;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease;
+}
+
+.loan-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  transition: background 0.4s ease;
+}
+
+.loan-box:hover::before {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+
+/* ==============================
+   CONTENT
+================================ */
+
+.loan-content {
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+}
+
+.loan-box h4 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.loan-box h4 span {
+  color: #9cff00;
+  margin-right: 8px;
+}
+
+
+/* ==============================
+   FIND OUT MORE
+================================ */
+
+.find-more {
+  color: #9cff00;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  border-bottom: 2px solid #9cff00;
+  width: fit-content;
+  transition: all 0.3s ease;
+}
+
+.loan-box:hover .find-more {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.arrow {
+  color: #9cff00 !important;
+  margin-left: 5px;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+/* Tablet */
+@media (max-width: 991px) {
+  .loan-box {
+    height: 280px;
+  }
+
+  .loan-heading h2 {
+    font-size: 30px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+  .loan-heading {
+    padding: 45px 15px 30px;
+  }
+
+  .loan-heading h2 {
+    font-size: 26px;
+  }
+
+  .loan-heading p {
+    font-size: 14px;
+  }
+
+  .loan-box {
+    height: 280px;
+  }
+
+  .loan-content {
+    padding: 20px;
+  }
+
+  .loan-box h4 {
+    font-size: 20px;
+  }
+
+  /* Always show FIND OUT MORE on mobile */
+  .find-more {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

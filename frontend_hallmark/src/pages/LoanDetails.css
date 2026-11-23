@@ -1,0 +1,808 @@
+/* =========================================================
+   LOAN DETAILS PAGE
+   GREEN BANKING / NBFC THEME
+========================================================= */
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.loan-details-hero {
+  position: relative;
+  min-height: 480px;
+
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #40574d,
+    #045e37
+  );
+
+  color: #ffffff;
+  overflow: hidden;
+}
+
+/* Decorative circle - top right */
+
+.loan-details-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  right: -150px;
+  top: -150px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 213, 79, 0.12);
+}
+
+/* Decorative circle - bottom left */
+
+.loan-details-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  left: -150px;
+  bottom: -150px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.07);
+}
+
+
+/* Keep hero content above decorations */
+
+.loan-details-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* Hero Heading */
+
+.loan-details-hero h1 {
+  font-size: 48px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  margin-bottom: 20px;
+
+  max-width: 750px;
+}
+
+
+/* Hero Description */
+
+.loan-details-hero p {
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #f1fff7;
+
+  max-width: 720px;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   CONTACT BUTTON
+========================================================= */
+
+.loan-contact-btn {
+  background: #ffd54f;
+
+  color: #006b3c;
+
+  border: none;
+
+  padding: 12px 28px;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  transition: all 0.3s ease;
+}
+
+.loan-contact-btn:hover {
+  background: #ffffff;
+
+  color: #006b3c;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* =========================================================
+   COMMON SECTION HEADINGS
+========================================================= */
+
+.loan-overview h2,
+.loan-features h2,
+.emi-section h2,
+.loan-eligibility h2,
+.loan-documents h2,
+.how-to-apply h2,
+.loan-faq h2 {
+  color: #006b3c;
+
+  font-size: 34px;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+
+/* =========================================================
+   LOAN OVERVIEW
+========================================================= */
+
+.loan-overview {
+  background: #ffffff;
+}
+
+.loan-overview .text-center p {
+  color: #666;
+
+  font-size: 16px;
+
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   LOAN INFORMATION CARDS
+========================================================= */
+
+.loan-info-card {
+  height: 100%;
+
+  background: #ffffff;
+
+  border: 1px solid #dceee5;
+
+  border-radius: 16px;
+
+  padding: 30px 25px;
+
+  text-align: center;
+
+  box-shadow:
+    0 5px 20px rgba(0, 107, 60, 0.07);
+
+  transition: all 0.3s ease;
+}
+
+.loan-info-card:hover {
+  transform: translateY(-7px);
+
+  border-color: #008f5a;
+
+  box-shadow:
+    0 12px 30px rgba(0, 107, 60, 0.15);
+}
+
+.loan-info-card h5 {
+  color: #555;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  margin-bottom: 15px;
+}
+
+.loan-info-card p {
+  color: #006b3c;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   FEATURES
+========================================================= */
+
+.loan-features {
+  background: #f5faf7;
+}
+
+
+/* Common list */
+
+.loan-list {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+
+/* List Item */
+
+.loan-list li {
+  position: relative;
+
+  background: #ffffff;
+
+  margin-bottom: 12px;
+
+  padding: 17px 20px 17px 52px;
+
+  border-radius: 10px;
+
+  border: 1px solid #e0eee7;
+
+  color: #555;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  box-shadow:
+    0 3px 12px rgba(0, 107, 60, 0.04);
+
+  transition: all 0.3s ease;
+}
+
+
+/* Check icon */
+
+.loan-list li::before {
+  content: "✓";
+
+  position: absolute;
+
+  left: 18px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 25px;
+
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e7f6ee;
+
+  color: #006b3c;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* Hover */
+
+.loan-list li:hover {
+  transform: translateX(5px);
+
+  border-color: #b8ddc9;
+
+  box-shadow:
+    0 6px 18px rgba(0, 107, 60, 0.09);
+}
+
+
+/* =========================================================
+   EMI CALCULATOR
+========================================================= */
+
+.emi-section {
+  background: #ffffff;
+}
+
+.emi-box {
+  max-width: 1000px;
+
+  margin: auto;
+
+  background: #f5faf7;
+
+  border-radius: 20px;
+
+  padding: 35px;
+
+  border: 1px solid #dceee5;
+
+  box-shadow:
+    0 8px 30px rgba(0, 107, 60, 0.08);
+}
+
+
+/* Labels */
+
+.emi-box label {
+  display: block;
+
+  color: #333;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  margin-bottom: 8px;
+}
+
+
+/* Inputs */
+
+.emi-box .form-control {
+  height: 48px;
+
+  border: 1px solid #d3e5db;
+
+  border-radius: 8px;
+
+  padding: 10px 14px;
+
+  color: #333;
+
+  font-size: 15px;
+
+  background: #ffffff;
+
+  transition: all 0.3s ease;
+}
+
+
+/* Input focus */
+
+.emi-box .form-control:focus {
+  border-color: #006b3c;
+
+  box-shadow:
+    0 0 0 3px rgba(0, 107, 60, 0.10);
+}
+
+
+/* EMI Result */
+
+.emi-result {
+  background: linear-gradient(
+    135deg,
+    #006b3c,
+    #008f5a
+  );
+
+  border-radius: 15px;
+
+  padding: 25px;
+
+  color: #ffffff;
+}
+
+.emi-result h5 {
+  font-size: 15px;
+
+  font-weight: 500;
+
+  margin-bottom: 8px;
+
+  color: #e3f7ec;
+}
+
+.emi-result h2 {
+  color: #ffd54f !important;
+
+  font-size: 34px !important;
+
+  font-weight: 700;
+
+  margin: 0;
+}
+
+
+/* =========================================================
+   ELIGIBILITY
+========================================================= */
+
+.loan-eligibility {
+  background: #f5faf7;
+}
+
+
+/* =========================================================
+   DOCUMENTS
+========================================================= */
+
+.loan-documents {
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   HOW TO APPLY
+========================================================= */
+
+.how-to-apply {
+  background: #f5faf7;
+}
+
+
+/* Numbered list */
+
+.apply-list {
+  counter-reset: apply-counter;
+
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+
+/* Apply item */
+
+.apply-list li {
+  counter-increment: apply-counter;
+
+  position: relative;
+
+  background: #ffffff;
+
+  margin-bottom: 15px;
+
+  padding: 18px 20px 18px 65px;
+
+  border-radius: 12px;
+
+  border: 1px solid #dceee5;
+
+  color: #555;
+
+  line-height: 1.6;
+
+  box-shadow:
+    0 3px 12px rgba(0, 107, 60, 0.04);
+
+  transition: all 0.3s ease;
+}
+
+
+/* Number */
+
+.apply-list li::before {
+  content: counter(apply-counter);
+
+  position: absolute;
+
+  left: 18px;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 32px;
+
+  height: 32px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #006b3c;
+
+  color: #ffffff;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* Hover */
+
+.apply-list li:hover {
+  transform: translateX(5px);
+
+  box-shadow:
+    0 6px 18px rgba(0, 107, 60, 0.09);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.loan-faq {
+  background: #ffffff;
+}
+
+
+/* FAQ width */
+
+.loan-faq .accordion {
+  max-width: 900px;
+
+  margin: auto;
+}
+
+
+/* FAQ item */
+
+.loan-faq .accordion-item {
+  border: none;
+
+  margin-bottom: 12px;
+
+  border-radius: 10px !important;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 4px 15px rgba(0, 107, 60, 0.06);
+}
+
+
+/* FAQ button */
+
+.loan-faq .accordion-button {
+  padding: 18px 20px;
+
+  background: #f5faf7;
+
+  color: #062b1b;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  border: none;
+}
+
+
+/* Open FAQ */
+
+.loan-faq .accordion-button:not(.collapsed) {
+  background: #0e1814;
+
+  color: #ffffff;
+
+  box-shadow: none;
+}
+
+
+/* Remove focus border */
+
+.loan-faq .accordion-button:focus {
+  box-shadow: none;
+}
+
+
+/* FAQ answer */
+
+.loan-faq .accordion-body {
+  padding: 20px;
+
+  background: #ffffff;
+
+  color: #666;
+
+  line-height: 1.7;
+
+  font-size: 15px;
+}
+
+
+/* =========================================================
+   TABLET RESPONSIVE
+========================================================= */
+
+@media (max-width: 991px) {
+
+  .loan-details-hero {
+    min-height: 430px;
+  }
+
+  .loan-details-hero h1 {
+    font-size: 40px;
+  }
+
+  .loan-details-hero p {
+    font-size: 16px;
+  }
+
+  .loan-overview h2,
+  .loan-features h2,
+  .emi-section h2,
+  .loan-eligibility h2,
+  .loan-documents h2,
+  .how-to-apply h2,
+  .loan-faq h2 {
+    font-size: 30px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 767px) {
+
+  /* Hero */
+
+  .loan-details-hero {
+    min-height: 430px;
+
+    text-align: center;
+
+    background: linear-gradient(
+      135deg,
+      #006b3c,
+      #008f5a
+    );
+  }
+
+  .loan-details-hero h1 {
+    font-size: 34px;
+  }
+
+  .loan-details-hero p {
+    font-size: 15px;
+
+    line-height: 1.7;
+  }
+
+
+  /* Button */
+
+  .loan-contact-btn {
+    padding: 11px 24px;
+  }
+
+
+  /* Sections */
+
+  .loan-overview,
+  .loan-features,
+  .emi-section,
+  .loan-eligibility,
+  .loan-documents,
+  .how-to-apply,
+  .loan-faq {
+    padding-top: 50px !important;
+
+    padding-bottom: 50px !important;
+  }
+
+
+  /* Headings */
+
+  .loan-overview h2,
+  .loan-features h2,
+  .emi-section h2,
+  .loan-eligibility h2,
+  .loan-documents h2,
+  .how-to-apply h2,
+  .loan-faq h2 {
+    font-size: 28px;
+  }
+
+
+  /* Cards */
+
+  .loan-info-card {
+    padding: 25px 20px;
+  }
+
+  .loan-info-card p {
+    font-size: 20px;
+  }
+
+
+  /* EMI */
+
+  .emi-box {
+    padding: 22px 18px;
+  }
+
+  .emi-result {
+    padding: 20px;
+  }
+
+  .emi-result h2 {
+    font-size: 28px !important;
+  }
+
+
+  /* Features */
+
+  .loan-list li {
+    padding: 15px 15px 15px 48px;
+
+    font-size: 15px;
+  }
+
+
+  /* Apply */
+
+  .apply-list li {
+    padding: 15px 15px 15px 58px;
+
+    font-size: 15px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+  .loan-details-hero {
+    min-height: 400px;
+  }
+
+  .loan-details-hero h1 {
+    font-size: 29px;
+  }
+
+  .loan-details-hero p {
+    font-size: 14px;
+  }
+
+  .loan-contact-btn {
+    padding: 10px 22px;
+  }
+
+  .loan-info-card {
+    padding: 22px 15px;
+  }
+
+  .emi-box {
+    padding: 18px 14px;
+  }
+
+  .loan-faq .accordion-button {
+    font-size: 14px;
+
+    padding: 16px;
+  }
+
+  .loan-faq .accordion-body {
+    font-size: 14px;
+  }
+}
